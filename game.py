@@ -72,6 +72,7 @@ def movePlr(x: int, y: int) -> None:
         variables.currGame += 1
         unpackMap()
 
+pygame.display.set_caption("PiXeL GAMe")
 pygame.init()
 
 screen = pygame.display.set_mode((window_width, window_height))
