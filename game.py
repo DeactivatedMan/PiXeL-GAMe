@@ -12,6 +12,7 @@ window_width, window_height = pixel_width * pixel_size, pixel_height * pixel_siz
 
 data = Path.cwd() / "data"
 menuImg = pygame.image.load(data / "menu.png")
+iconImg = pygame.image.load(data / "icon.png")
 mapData = data / "mapData"
 
 class VariablesClass:
@@ -72,6 +73,7 @@ def movePlr(x: int, y: int) -> None:
         variables.currGame += 1
         unpackMap()
 
+pygame.display.set_icon(iconImg)
 pygame.display.set_caption("PiXeL GAMe")
 pygame.init()
 
