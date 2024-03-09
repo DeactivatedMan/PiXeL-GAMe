@@ -19,9 +19,6 @@ def unpackData(imagePath, rgb):
 
 def unpackAll(imagePath: str):
     try:
-        red = unpackData(imagePath, (255,0,0,255))
-        green = unpackData(imagePath, (0,255,0,255))
-        blue = unpackData(imagePath, (0,0,255,255))
-        return [red,green,blue]
+        return [unpackData(imagePath, (255,0,0,255)),unpackData(imagePath, (0,255,0,255)),unpackData(imagePath, (0,0,255,255))]
     except Exception as err:
         return [err, False, False]
