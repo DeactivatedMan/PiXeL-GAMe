@@ -4,7 +4,7 @@ from mapUnpacker import unpackAll
 import subprocess
 
 # Set the pixel dimensions
-pixel_size = 16
+pixel_size = 16 # <---- Increase for higher resolutions, lol
 pixel_width, pixel_height = 16, 16
 
 # Set the window dimensions
