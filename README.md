@@ -8,7 +8,7 @@ When adding new maps, you can run the game, then press "MOD", this will open up 
 
 Check line 7 of game.py to increase (or decrease) resolution.
 
--- Precompiled Version
+# Precompiled Version
 
 If you want a .exe instead of a .py, you can download a .rar, or all the files at the link below:
 https://drive.google.com/drive/folders/1Cv432nzWLha34cfRkFJ2-L0SRVRSC81V?usp=sharing
