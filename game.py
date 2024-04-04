@@ -10,7 +10,8 @@ pixel_width, pixel_height = 16, 16
 # Set the window dimensions
 window_width, window_height = pixel_width * pixel_size, pixel_height * pixel_size
 
-data = Path.cwd() / "data"
+if (Path.cwd() / "_internal").is_dir(): data = Path.cwd() / "_internal" / "data"
+else: data = Path.cwd() / "data"
 menuImg = pygame.image.load(data / "menu.png")
 iconImg = pygame.image.load(data / "icon.png")
 mapData = data / "mapData"
